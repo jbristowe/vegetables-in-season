@@ -4,9 +4,9 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="Highlighting when vegetables are in season.">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Highlighting when vegetables are in season.">
   <meta http-equiv="cleartype" content="on">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -84,13 +84,16 @@
               { category: "WINTER", color: "#aaa", value: 25, visibleInLegend: false },
               { category: "SPRING", color: "#aaa", value: 25, visibleInLegend: false }
             ],
+            holeSize: 10,
             labels: {
               visible: true,
               template: "#= category #"
             },
             startAngle: -105,
             size: 65,
-            holeSize: 10
+            tooltip: {
+              visible: false
+            }
           },
           {
             data: [
@@ -111,8 +114,11 @@
               visible: true,
               template: "#= category #"
             },
-            width: 10,
-            size: 35
+            size: 35,
+            tooltip: {
+              visible: false
+            },
+            width: 10
           },
           {
             data: [{
